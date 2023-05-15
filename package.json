@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My portfolio website",
   "scripts": {
-    "dev": "bundle exec jekyll serve --watch",
+    "dev": "bundle exec jekyll serve --watch --livereload",
     "clean": "bundle exec jekyll clean",
     "build": "bundle exec jekyll build",
     "host:gh": "npm run build && gh-pages -d _site"
