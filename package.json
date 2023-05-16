@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "My portfolio website",
   "scripts": {
-    "dev": "bundle exec jekyll serve --watch --livereload",
+    "dev": "bundle exec jekyll serve --watch --livereload --drafts",
+    "preview": "bundle exec jekyll serve",
     "clean": "bundle exec jekyll clean",
-    "build": "bundle exec jekyll build",
-    "host:gh": "npm run build && gh-pages -d _site"
+    "build": "npm run clean && bundle exec jekyll build",
+    "deploy:gh": "npm run build && gh-pages -d _site"
   },
   "keywords": [],
   "author": "",
