@@ -6,11 +6,18 @@
 
 title: OYHP
 email: oyhpnayiaw@gmail.com
-description: >- 
+description: >-
   My portfolio site.
-baseurl: "" 
-url: "" 
-permalink: /:title/
+baseurl: ""
+url: ""
+permalink: /:title
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title
+    sort_by: date
+    reverse: true
 
 plugins:
   - jekyll-feed

@@ -1,0 +1,31 @@
+.site-header {
+  text-align: start;
+  padding: 16px 0;
+
+  &_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &_page-link {
+    color: var(--text);
+    font-weight: 400;
+    opacity: 0.7;
+    transition: 200ms;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &_title {
+    font-weight: 300;
+    font-size: 2.4rem;
+  }
+}
