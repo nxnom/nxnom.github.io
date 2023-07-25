@@ -1,0 +1,27 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<!-- <blockquote> -->
+<!--   The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it -->
+<!--   yourself'. Yes, that's it. ~ Linus Torvalds -->
+<!-- </blockquote> -->
+
+<div>
+  {% assign projects = site.projects %}
+  {{site.tags['linux'][0].title}}
+
+  {{page.path}}
+
+  {{paginator.projects.size}}
+
+  <ul>
+    {%- for project in projects -%}
+    <li>
+      <a href="{{ project.url | relative_url }}"> {{ project.title | escape }} </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>

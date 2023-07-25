@@ -1,0 +1,55 @@
+---
+layout: default
+permalink: /about/
+---
+
+<h2>About Me</h2>
+
+<p>
+  I am a software engineer with a passion for building things. I have a
+  background in computer science and mathematics.
+</p>
+
+<style>
+  .contact-list span {
+    display: inline-block;
+    min-width: 4.5rem;
+    font-size: 0.95rem;
+  }
+</style>
+
+<section>
+  <h3 style="margin: 0 0 1rem">Contact</h3>
+  <ul class="contact-list">
+    <li>
+      <span>Email</span>:
+      <a
+        href="mailto:{{ site.author.email }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ site.author.email }}
+      </a>
+    </li>
+    <li>
+      <span>Linkedin</span>:
+      <a
+        href="https://www.linkedin.com/in/{{ site.author.handle }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ site.author.handle }}
+      </a>
+    </li>
+    <li>
+      <span>Github</span>:
+      <a
+        href="https://github.com/{{ site.author.handle }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ site.author.handle }}
+      </a>
+    </li>
+  </ul>
+</section>

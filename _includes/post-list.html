@@ -1,0 +1,50 @@
+<style>
+  .post-list {
+    list-style-position: outside;
+    padding: 0 1rem;
+  }
+
+  .post-list>li {
+    margin-top: 0.5rem;
+  }
+
+  .post-list a {
+    text-decoration: none !important;
+  }
+
+  .post-title:hover {
+    text-decoration: underline !important;
+    text-decoration-style: wavy !important;
+    text-decoration-color: var(--text) !important;
+  }
+
+  .tag {
+    color: var(--text) !important;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .tag:hover {
+    color: var(--accent) !important;
+    opacity: 0.9;
+  }
+</style>
+
+<ul class="post-list">
+  {%- for post in posts -%}
+  <li>
+    <a class="post-title" href="{{ post.url | relative_url }}">
+      {{ post.title | escape }}
+    </a>
+
+    <div style="margin-bottom: 8px">
+      {%- for tag in post.tags -%} 
+      {% assign path = "/blog/tags/" | append: tag %}
+      <a class="tag" href="{{path}}"> #{{ tag | downcase }} </a>
+      {%- endfor -%}
+    </div>
+  </li>
+  {%- endfor -%}
+</ul>

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+
+{% assign tag = page.path | split: "/" | last | split: "." | first %} 
+{% assign posts = site.tags[tag] %} 
+
+<h3 style="opacity: 0.8;">{{ tag | capitalize }} related posts</h3>
+
+{% include post-list.html %}
+
+<a 
+  style="
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text) !important;
+  "
+  href="{{ "/blog/" | relative_path }}">
+  <~ Back to Blog
+</a>

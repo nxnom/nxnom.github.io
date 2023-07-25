@@ -13,3 +13,7 @@ end
 task :build do
   sh "bundle exec jekyll build"
 end
+
+task :create_tags do
+  sh "ruby create_tags.rb"
+end

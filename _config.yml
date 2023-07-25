@@ -4,14 +4,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: OYHP
-email: oyhpnayiaw@gmail.com
+title: "@oyhpnayiaw"
 description: >-
-  My portfolio site.
+  oyhpnayiaw's blog
 baseurl: ""
-url: ""
-permalink: /:title
+url: https://oyhpnayiaw.github.io
+author:
+  name: Wai Yan Phyo
+  email: oyhpnayiaw@gmail.com
+  handle: oyhpnayiaw
+  url: https://oyhpnayiaw.github.io
 
+permalink: /blog/:title
 collections:
   projects:
     output: true
@@ -26,3 +30,21 @@ plugins:
 exclude:
   - package.json
   - pnpm-lock.yaml
+
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: /assets/favicon.ico # TODO: Change default site image
+  - 
+    scope:
+      path: "blog/tags" 
+    values:
+      layout: "tag"
+
+paginate: 10
+paginate_path: "/blog/page:num/"

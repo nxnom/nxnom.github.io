@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h2 style="margin: 2rem 0 1rem">{{ page.title }}</h2>
+
+<div class="row">
+  {% for tag in page.tags %}
+  <span class="chip">{{ tag | capitalize }}</span>
+  {% endfor %}
+</div>
+<hr />
+
+<div>
+  <date style="font-size: 0.8rem; opacity: 0.8">
+    {{ page.date | date: "%B %-d, %Y" }}
+  </date>
+</div>
+
+<div>{{ content }}</div>

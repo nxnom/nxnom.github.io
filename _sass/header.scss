@@ -4,28 +4,44 @@
 
   &_wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
 
+  &_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 20px;
+  }
+
   a {
     text-decoration: none;
+    color: var(--text);
   }
 
   &_page-link {
-    color: var(--text);
     font-weight: 400;
-    opacity: 0.7;
-    transition: 200ms;
+    opacity: 0.9;
 
     &:hover {
-      color: var(--accent);
+      text-decoration: underline !important;
+    }
+
+    &--active {
+      color: var(--accent) !important;
+      opacity: 1;
     }
   }
 
   &_title {
-    font-weight: 300;
-    font-size: 2.4rem;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
   }
 }
