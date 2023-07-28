@@ -1,16 +1,8 @@
 ---
-layout: default
-title: "This post demonstrates post content styles"
-categories: junk
-author:
-- Bart Simpson
-- Nelson Mandela Muntz
-meta: "Springfield"
-list_title: "PrintMe"
+layout: post
+title: This post demonstrates post content styles
+tags: linux debian
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
-
 ## Some great heading (h2)
 
 Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
@@ -111,6 +103,6 @@ lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ip
 Title 1 | Title 2 | Title 3 | Title 4
 --- | --- | --- | ---
 lorem | lorem ipsum | lorem ipsum dolor | lorem ipsum dolor sit
-lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsum dolor sit amet | lorem ipsum dolor sit
+lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
 lorem ipsum dolor | lorem ipsum | lorem | lorem ipsum
-lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur
+lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit 
