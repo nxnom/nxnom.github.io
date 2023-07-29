@@ -30,6 +30,7 @@ plugins:
 exclude:
   - package.json
   - pnpm-lock.yaml
+  - create_tags.rb
 
 sass:
   style: compressed
