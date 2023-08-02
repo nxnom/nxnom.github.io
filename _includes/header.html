@@ -3,7 +3,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-header_title" rel="author" href="{{ "/" | relative_url }}">
-      {{ site.title | escape }}
+      {{ site.title }}
     </a>
 
     <nav class="site-header_nav">
@@ -14,19 +14,19 @@
           Home
       </a>
       <a 
-        class="site-header_page-link {% if current[1] == 'blog' %}site-header_page-link--active{% endif %}" 
-        href="{{ '/blog/' | relative_url }}">
-          Blog
+        class="site-header_page-link {% if current[1] == 'articles' %}site-header_page-link--active{% endif %}" 
+        href="{{ '/articles/' | relative_url }}">
+          Articles
       </a>
       <a 
-        class="site-header_page-link {% if current[1] == 'projects' %}site-header_page-link--active{% endif %}" 
-        href="{{ '/projects/' | relative_url }}">
-          Projects
+        class="site-header_page-link {% if current[1] == 'works' %}site-header_page-link--active{% endif %}" 
+        href="{{ '/works/' | relative_url }}">
+          Works
       </a>
       <a 
         class="site-header_page-link {% if current[1] == 'about' %}site-header_page-link--active{% endif %}" 
         href="{{ '/about/' | relative_url }}">
-          About
+          Me
       </a>
     </nav>
   </div>

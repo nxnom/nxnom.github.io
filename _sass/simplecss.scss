@@ -47,7 +47,7 @@
   /* Add a bit of transparency so light media isn't so glaring in dark mode */
   img,
   video {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -709,10 +709,11 @@ dialog::backdrop {
   background-color: var(--accent-bg);
   color: var(--accent);
   border-radius: 4px;
-  padding: 0.2rem 0.7rem;
+  padding: 0.2rem 0.4rem;
   margin: 0.5rem 0.5rem 0.5rem 0;
   box-shadow: 0 0 0 1px var(--accent);
   font-size: 0.7rem;
+  text-decoration: none;
 }
 
 .row {

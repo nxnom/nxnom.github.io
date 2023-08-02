@@ -21,8 +21,8 @@ end
 namespace :new do
   name = ARGV[1..-1].join(" ")
 
-  task :project do
-    sh "bundle exec jekyll compose -c projects -l project \"#{name}\""
+  task :work do
+    sh "bundle exec jekyll compose -c works -l work \"#{name}\""
     exit 0
   end
 

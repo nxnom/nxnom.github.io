@@ -1,0 +1,52 @@
+---
+layout: default
+title: Works
+permalink: /works/
+---
+
+<blockquote>
+  <span style="opacity: 0.6">
+    I use whatever fit with the project I'm working on. I'm not religious about
+    my tools. Below are some of my works that worth mentioning.
+  </span>
+</blockquote>
+
+{% assign projects = site.works | sort: "date" | reverse %}
+
+<div class="project-grid">
+  {%- for project in projects -%}
+  <div class="project-card">
+    <div class="project-info">
+    <a  href="{{ project.url | relative_url }}">
+      <div class="more"></div>
+      <img class="project-image" src="{{ project.image | relative_url }}" alt="project-image" />
+      <div class="project-title-wrapper">
+        <div class="project-title">{{ project.title | escape }}</div>
+        {% assign techs = project.tech | slice: 0, 3%} {% for t in techs %}
+        <span class="chip">{{ t | capitalize }}</span>
+        {% endfor %}
+        <div class="project-subtitle">{{ project.description }}</div>
+      </div>
+    </a>
+    </div>
+
+    <div class="project-links">
+      {% if project.live %}
+      <a class="project-link" href="{{ project.live | relative_url }}" target="_blank" rel="noopener noreferrer">
+        {%- assign text = project.live-name | default: "View" -%} {{ text }}
+      </a>
+      {% endif %}{% if project.live && project.github %}
+      <span class="project-link-separator">|</span>
+      {% endif %}{% if project.github %}
+      <a class="project-link" href="{{ project.github | relative_url }}" target="_blank" rel="noopener noreferrer">
+        Github
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
+
+<div>
+  Check out my open source projects on <a href="https://github.com/{{ site.author.handle }}" target="_blank" rel="noopener noreferrer">Github</a>.
+</div>

@@ -15,11 +15,11 @@ author:
   handle: oyhpnayiaw
   url: https://oyhpnayiaw.github.io
 
-permalink: /blog/:title
+permalink: /articles/:title
 collections:
-  projects:
+  works:
     output: true
-    permalink: /projects/:title
+    permalink: /works/:title
     sort_by: date
     reverse: true
 
@@ -40,12 +40,12 @@ defaults:
     scope:
       path: ""
     values:
-      image: /assets/favicon.ico # TODO: Change default site image
+      image: /assets/default.png
   - 
     scope:
-      path: "blog/tags" 
+      path: "articles/tags" 
     values:
       layout: "tag"
 
 paginate: 10
-paginate_path: "/blog/page:num/"
+paginate_path: "/articles/page:num/"

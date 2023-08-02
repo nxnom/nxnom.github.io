@@ -2,11 +2,12 @@
 layout: default
 ---
 
-<h2 style="margin: 2rem 0 1rem">{{ page.title }}</h2>
+<h2 style="margin: 2rem 0 1rem">{{ page.title | escape | capitalize }}</h2>
 
 <div class="row">
   {% for tag in page.tags %}
-  <span class="chip">{{ tag | capitalize }}</span>
+    {% assign path = "/articles/tags/" | append: tag | relative_url %}
+    <a class="chip" href="{{path }}">{{ tag | capitalize }}</a>
   {% endfor %}
 </div>
 <hr />

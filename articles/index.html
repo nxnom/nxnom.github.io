@@ -1,0 +1,19 @@
+---
+layout: default
+title: Articles
+---
+
+<blockquote>
+  <span style="opacity: 0.6;">
+    The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it
+    yourself'. Yes, that's it. ~ Linus Torvalds
+  </span>
+</blockquote>
+
+<div>
+  {% assign posts = paginator.posts %}
+
+  {% include post-list.html %}
+
+  {% include pagination.html %}
+</div>

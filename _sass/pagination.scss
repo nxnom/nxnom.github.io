@@ -1,0 +1,16 @@
+.paginator-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0 1rem;
+  max-width: 800px;
+  color: var(--text) !important;
+}
+
+.paginator-wrapper a {
+  opacity: 0.9;
+  color: var(--text) !important;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+}

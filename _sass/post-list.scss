@@ -1,0 +1,35 @@
+.post-list {
+  list-style-position: outside;
+  padding: 0 1rem;
+}
+
+.post-list > li {
+  margin-top: 0.5rem;
+}
+
+.post-list a {
+  text-decoration: none !important;
+}
+
+.post-title {
+  color: var(--post-title) !important;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.post-title:hover {
+  text-decoration: underline !important;
+}
+
+.post-tag {
+  color: var(--text) !important;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.post-tag:hover {
+  text-decoration: underline !important;
+  opacity: 1;
+}

@@ -1,6 +1,6 @@
 puts "Deleting old tags..."
 
-Dir.glob("blog/tags/*.md").each do |file|
+Dir.glob("articles/tags/*.md").each do |file|
   File.delete(file)
 end
 
@@ -24,6 +24,6 @@ tags = tags
        .uniq.sort
 
 tags.each do |tag|
-  puts "Creating blog/tags/#{tag}.md"
-  File.write("blog/tags/#{tag}.md", "---\n---")
+  puts "Creating articles/tags/#{tag}.md"
+  File.write("articles/tags/#{tag}.md", "---\n---")
 end

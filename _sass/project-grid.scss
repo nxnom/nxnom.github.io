@@ -1,0 +1,100 @@
+.project-grid {
+  display: grid;
+  margin: 1.2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.project-image {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.more {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+.more::after {
+  content: "More Details \02197";
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.project-card {
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: var(--standard-border-radius);
+  transition: all 0.2s ease-in-out;
+}
+
+.project-info {
+  position: relative;
+}
+
+.project-info:hover .more {
+  display: flex;
+}
+
+
+.project-card a {
+  text-decoration: none;
+}
+
+.project-title-wrapper {
+  padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--post-title);
+  margin-bottom: 4px;
+}
+
+.project-subtitle {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--text);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.project-link {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  border-radius: 0 0 var(--standard-border-radius) var(--standard-border-radius);
+}
+
+.project-link::after {
+  content: "\02197";
+  font-size: inherit;
+}
+
+.project-link:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.project-link-separator {
+  opacity: 0.5;
+}
