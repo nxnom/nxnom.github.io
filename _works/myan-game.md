@@ -2,7 +2,7 @@
 layout: work
 title: Myan Game
 date: 2019-10-14
-tech: [React.js, PWA, Socket.io]
+tech: [React.js, PWA, Feathers.js]
 description: Myan Game Shop is a Progressive Web App for an e-commerce store that sells in-game items and gift cards. 
 image: /assets/images/projects/myan-game/cover.jpg
 webp-image: /assets/images/projects/myan-game/cover.webp
@@ -22,7 +22,7 @@ is-landscape-screenshots: true
 
 {{ page.description }}
 
-For this app I use React.js with Socket.io. I also use PWA to make it installable on mobile devices.
+For this app I use React.js with Feathers.js for backend. I also use PWA to make it installable on devices.
 
 For the authentication, I use OAuth2 with Google and Facebook. I also use JWT for the API authentication.
 

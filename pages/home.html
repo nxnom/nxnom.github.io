@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /
+---
+
+<h1>Hello there!</h1>
+
+<article>
+I'm {{ site.author.name }} 👋
+Thanks for visiting my site. 
+I'm a full-stack web and mobile developer from Myanmar 🇲🇲.
+I like to keep things simple and clean.
+You can read more about me <a href="/about/" title="About Me">here</a>.
+</article>
+
+<p><b>Connect with me on:</b></p>
+
+{% include social-links.html %}
+
+
+<h3>Latest Projects</h3>
+
+{% assign projects = site.works | sort: "date" | reverse | slice: 0, 2 %}
+
+{% include project-grid.html %}
+
+View all of my recent <a href="/works/" title="Works">projects</a>.
+
+<h3>Latest Articles</h3>
+
+{% assign posts = site.posts | sort: "date" | reverse | slice: 0, 4 %}
+
+{% include post-list.html %}
+
+<blockquote>
+Just a note, instead of treating them as articles,
+I treat them as notes for myself cuz I'm sick of finding solutions to the same problems over and over again.
+So, they may not be well written and may not be useful to you.
+</blockquote>
+
+<p>
+You can view all of my articles <a href="/articles/">here</a>. 
+Hope you find something useful. 
+</p>

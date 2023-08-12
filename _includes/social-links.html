@@ -1,0 +1,45 @@
+<style>
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .social-links a {
+    text-decoration: none;
+  }
+
+  .social-links svg {
+    color: var(--accent);
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .social-links svg:hover {
+    opacity: 1;
+  }
+</style>
+
+<div class="social-links">
+  <a
+    href="https://www.linkedin.com/in/{{ site.author.handle }}"
+    target="_blank"
+    title="LinkedIn"
+  >
+    {% include icons/linkedin.svg %}
+  </a>
+  <a
+    href="https://github.com/{{ site.author.handle }}"
+    target="_blank"
+    title="Github"
+  >
+    {% include icons/github.svg %}
+  </a>
+  <a
+    href="https://twitter.com/{{ site.author.handle }}"
+    target="_blank"
+    title="Twitter"
+  >
+    {% include icons/twitter.svg %}
+  </a>
+</div>
