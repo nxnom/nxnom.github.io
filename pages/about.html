@@ -3,14 +3,14 @@ layout: default
 permalink: /about/
 ---
 
-<h2>About Me</h2>
-
-<p>
-  I am a software engineer with a passion for building things. I have a
-  background in computer science and mathematics.
-</p>
-
 <style>
+  .tools span {
+    display: inline-block;
+    min-width: 6rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+  }
+
   .contact-list span {
     display: inline-block;
     min-width: 4.5rem;
@@ -18,38 +18,116 @@ permalink: /about/
   }
 </style>
 
-<section>
-  <h3 style="margin: 0 0 1rem">Contact</h3>
-  <ul class="contact-list">
-    <li>
-      <span>Email</span>:
-      <a
-        href="mailto:{{ site.author.email }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {{ site.author.email }}
-      </a>
-    </li>
-    <li>
-      <span>Linkedin</span>:
-      <a
-        href="https://www.linkedin.com/in/{{ site.author.handle }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {{ site.author.handle }}
-      </a>
-    </li>
-    <li>
-      <span>Github</span>:
-      <a
-        href="https://github.com/{{ site.author.handle }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {{ site.author.handle }}
-      </a>
-    </li>
-  </ul>
-</section>
+<h2>About Me</h2>
+
+<p>
+  Thanks for visiting my blog! My name is <i><b>Wai Yan Phyo</b></i> but people
+  call me <i><b>EB</b></i
+  >. I'm simple guy who loves to code while listening to ballad songs and watch
+  movies in my free time.
+</p>
+
+<details open>
+  <summary>
+    <span style="margin-left: 0.4rem"> Backstory </span>
+  </summary>
+
+  <p>
+    I was first introduced to programming at 2011 when I started my first year
+    at university. I was actively coding for 3 years and then I stopped for 5
+    years and only using tools like workpress. I started coding again in 2019
+    and I've been coding ever since. At that time, I just wanted to convert my
+    wordpress website to android app and I can't find opensource project suited
+    to my project. So I don't have any choice but to code again. Flutter is
+    kinda hot at that moment, so I started learning flutter and I've been using
+    flutter ever since.
+  </p>
+
+  <p style="margin-bottom: 1rem">
+    I post about my project on facebook and ppl started asking me to make app
+    for them. So, I started working for them and become a freelancer. But you
+    know I cannot do everying with flutter. So I started learning javascript and
+    React.js for web development and Node.js for backend development.
+  </p>
+</details>
+
+<p>
+  I'm currently looking for a full-time remote job. If you want to know more
+  about me, please view my
+  <a href="{{ site.author.resume }}" target="_blank">resume</a> or my
+  <a href="https://www.linkedin.com/in/{{ site.author.handle }}" target="_blank"
+    >linkedin</a
+  >
+  profile. If you are interested in working with me, please
+  <a href="#contact">contact me</a>.
+</p>
+
+<h3>Tools I mainly use</h3>
+
+<ul class="tools">
+  <li><span>Languages</span>: Dart, Javascript, Typescript</li>
+  <li><span>Frameworks</span>: Flutter, Express.js, React.js, React Native</li>
+  <li><span>Database</span>: MongoDB, PostgreSQL, Firebase</li>
+</ul>
+
+You can take view how I use these tools in my past
+<a href="/works">projects</a>. You can click on each project to view more
+in-depth details about the project.
+
+<h5>Tools I'm familiar with</h5>
+
+<ul class="tools">
+  <li><span>Languages</span>: Ruby, Lua, C</li>
+  <li><span>Frameworks</span>: Ruby on Rails, Next.js, Vue.js</li>
+  <li><span>Database</span>: MySQL, SQLite</li>
+</ul>
+
+<p>
+  I don't have any favorite tools. I just use the tools that are suitable for
+  the project. I'm always open to learn new tools and technologies. I also try
+  to learn new tools and technologies whenever I have free time.
+</p>
+<p>
+  <i>
+   <b>PS:</b> I know that Express.js, React.js blah blah are not technically frameworks.
+    Hey! It is what it is ¯\_(ツ)_/¯
+  </i>
+</p>
+
+<h3 id="contact">Contact Me</h3>
+
+Please feel free to contact me if you have any questions or if you want to work
+with me.
+
+<ul class="contact-list">
+  <li>
+    <span>Email</span>:
+    <a
+      href="mailto:{{ site.author.email }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {{ site.author.email }}
+    </a>
+  </li>
+  <li>
+    <span>Linkedin</span>:
+    <a
+      href="https://www.linkedin.com/in/{{ site.author.handle }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {{ site.author.handle }}
+    </a>
+  </li>
+  <li>
+    <span>Github</span>:
+    <a
+      href="https://github.com/{{ site.author.handle }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {{ site.author.handle }}
+    </a>
+  </li>
+</ul>
