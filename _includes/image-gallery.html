@@ -1,0 +1,18 @@
+<div 
+  class="image-gallery 
+  {% if page.is-landscape-screenshots %}image-gallery-landscape {% endif %}
+  {% if include.class %}{{ include.class }}{% endif %}
+  "
+  {% if include.style %}
+    style="{{ include.style }}"
+  {% endif %}
+>
+  {%- assign images = page.screenshots -%}
+  {%- assign path = '/assets/images/projects/' | append: page.screenshots-folder | append: '/' -%}
+
+  {% for image in images %}
+  {% capture webp %} {{ path | append: image | append: '.webp' }} {% endcapture %}
+  {% capture src %} {{ path | append: image | append: '.jpg' }} {% endcapture %}
+  {% include image.html src=src webp=webp alt=image %}
+  {% endfor %}
+</div>

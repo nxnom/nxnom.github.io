@@ -2,6 +2,21 @@
 layout: default
 ---
 
-<h2>{{page.title}}</h2>
+{% capture webp %} {{ page.webp-image | relative_url }} {% endcapture %} 
+{% capture src %} {{ page.image | relative_url }} {% endcapture %} 
+
+{% include image.html src=src webp=webp class="project-landing-image" %}
+
+<h2 style="margin: 1rem 0 0.4rem;">{{page.title}}</h2>
 
 {{content}}
+
+{% if page.screenshots-folder %}
+
+<h2 id="screenshots">Screenshots</h2>
+
+<p>Below are some screenshots of the project.</p>
+
+{% include image-gallery.html %}
+
+{% endif %}

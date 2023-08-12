@@ -1,0 +1,13 @@
+<picture>
+  <source srcset="{{ include.webp }}" type="image/webp" />
+  <img
+    src="{{ include.src }}"
+    {% if include.class %}
+      class="{{ include.class }}"
+    {% endif %}
+    {% if include.style %}
+      style="{{ include.style }}"
+    {% endif %}
+    alt="{{ include.alt | default: 'image' }}"
+  />
+</picture>

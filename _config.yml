@@ -41,6 +41,11 @@ defaults:
       path: ""
     values:
       image: /assets/default.png
+  -
+    scope:
+      path: "_works"
+    values:
+      screenshots: ['1', '2', '3', '4']
   - 
     scope:
       path: "articles/tags" 

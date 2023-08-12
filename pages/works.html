@@ -17,28 +17,53 @@ permalink: /works/
   {%- for project in projects -%}
   <div class="project-card">
     <div class="project-info">
-    <a  href="{{ project.url | relative_url }}">
-      <div class="more"></div>
-      <img class="project-image" src="{{ project.image | relative_url }}" alt="project-image" />
-      <div class="project-title-wrapper">
-        <div class="project-title">{{ project.title | escape }}</div>
-        {% assign techs = project.tech | slice: 0, 3%} {% for t in techs %}
-        <span class="chip">{{ t | capitalize }}</span>
-        {% endfor %}
-        <div class="project-subtitle">{{ project.description }}</div>
-      </div>
-    </a>
+      <a href="{{ project.url | relative_url }}">
+        <div class="more"></div>
+        {% capture webp %} {{ project.webp-image | relative_url }} {% endcapture %} 
+        {% capture src %} {{ project.image | relative_url }} {% endcapture %} 
+        {% include image.html class="project-image" src=src webp=webp %}
+        <div class="project-title-wrapper">
+          <div class="project-title">{{ project.title | escape }}</div>
+          {% assign techs = project.tech | slice: 0, 3%} {% for t in techs %}
+          <span class="chip">{{ t }}</span>
+          {% endfor %}
+          <div class="project-subtitle">{{ project.description }}</div>
+        </div>
+      </a>
     </div>
 
-    <div class="project-links">
+    {% assign link_count = 0 %} 
+
+    {% if project.live %} 
+      {% assign link_count = link_count | plus: 1 %} 
+    {% endif %} 
+
+    {% if project.github %} 
+      {% assign link_count = link_count | plus: 1 %} 
+    {% endif %}
+
+    <div
+      class="project-links {% if link_count > 0 %}project-links-border{% endif %}"
+    >
       {% if project.live %}
-      <a class="project-link" href="{{ project.live | relative_url }}" target="_blank" rel="noopener noreferrer">
-        {%- assign text = project.live-name | default: "View" -%} {{ text }}
+      <a
+        class="project-link"
+        href="{{ project.live | relative_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {%- assign text = project.live-name | default: "Visit" -%} 
+        {{ text }}
       </a>
-      {% endif %}{% if project.live && project.github %}
+      {% endif %} {% if link_count == 2 %}
       <span class="project-link-separator">|</span>
-      {% endif %}{% if project.github %}
-      <a class="project-link" href="{{ project.github | relative_url }}" target="_blank" rel="noopener noreferrer">
+      {% endif %} {% if project.github %}
+      <a
+        class="project-link"
+        href="{{ project.github | relative_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Github
       </a>
       {% endif %}
@@ -48,5 +73,11 @@ permalink: /works/
 </div>
 
 <div>
-  Check out my open source projects on <a href="https://github.com/{{ site.author.handle }}" target="_blank" rel="noopener noreferrer">Github</a>.
+  Check out my open source projects on
+  <a
+    href="https://github.com/{{ site.author.handle }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    >Github</a
+  >.
 </div>
