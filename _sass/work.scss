@@ -9,28 +9,7 @@
   aspect-ratio: 16 / 10;
   object-fit: cover;
   width: 100%;
-}
-
-.more {
-  display: none;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  z-index: 100;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: var(--standard-border-radius) var(--standard-border-radius) 0 0;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  color: #fff;
-}
-
-.more::after {
-  content: "More Details \2192";
-  font-size: 1rem;
-  margin-left: 0.5rem;
+  transition: all 0.2s ease;
 }
 
 .project-card {
@@ -44,10 +23,11 @@
 
 .project-info {
   position: relative;
+  overflow: hidden;
 }
 
-.project-info:hover .more {
-  display: flex;
+.project-info:hover .project-image {
+  transform: scale(1.05);
 }
 
 .project-card a {

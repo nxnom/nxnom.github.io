@@ -3,7 +3,6 @@
   <div class="project-card">
     <div class="project-info">
       <a href="{{ project.url | relative_url }}">
-        <div class="more"></div>
         {% capture webp %} {{ project.webp-image | relative_url }} {% endcapture %} 
         {% capture src %} {{ project.image | relative_url }} {% endcapture %} 
         {% include image.html class="project-image" src=src webp=webp %}
