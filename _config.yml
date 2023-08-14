@@ -32,6 +32,9 @@ exclude:
   - package.json
   - pnpm-lock.yaml
   - create_tags.rb
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 
 sass:
   style: compressed
