@@ -190,3 +190,6 @@ use this repo [https://github.com/oyhpnayiaw/rtw89](https://github.com/oyhpnayia
 #### Conclusion
 
 Damn, it's a long post. I hope you enjoy it. If you have any question, feel free to ask me.
+
+If you are interest read about how I optimize 3-4hr battery life to 7-10hr battery life
+[here](/articles/optimize-3hr-battery-life-to-8hr-in-my-debian-laptop).
