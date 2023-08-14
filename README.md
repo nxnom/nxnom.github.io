@@ -1,8 +1,8 @@
 # Clean and Simple Jekyll Blog
 
-Built using [Jekyll](https://jekyllrb.com/){:target="_blank"}.
+Built using [Jekyll](https://jekyllrb.com/).
 
-View the live site at [https://oyhpnayiaw.github.io/](https://oyhpnayiaw.github.io/){:target="_blank"}
+View the live site at [https://oyhpnayiaw.github.io/](https://oyhpnayiaw.github.io/).
 
 ### Requirements
 
@@ -22,4 +22,4 @@ with live reload and will also include draft posts.
 rake dev
 ```
 
-> See `Rakefile` for more useful commands.
+> See [Rakefile](Rakefile) for more details.
