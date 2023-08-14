@@ -7,7 +7,7 @@ image: /assets/images/posts/lenovo-debian.jpg
 ---
 
 After installing debian on my laptop, I found that my laptop battery last only 3-4hr
-eventhough in windows it can last 7-10hr. So I decided to optimize my laptop battery life.
+even though in windows it can last 7-10hr. So I decided to optimize my laptop battery life.
 
 > See my previous post [Install debian on lenovo ideapad 5 pro 16ARH7](/articles/install-debian-on-lenovo-ideapad-5-pro-16arh7) for more information about my laptop.
 
@@ -69,14 +69,14 @@ When I run `nvidia-smi` I found that my dedicated GPU is still running and consu
 I try several ways to disable dedicated GPU but nothing seems working. I can completely disable from
 BIOS but I don't want to do that. I want to use it when I need it.
 
-Then I though I'll just uninstall all nvidia driver, I don't need it anyway. So I uninstall all nvidia driver
+Then I thought I'll try uninstalling all nvidia driver, I don't need it anyway. So I uninstall all nvidia driver
 using this command.
 
 ```
 sudo apt purge "*nvidia*"
 ```
 
-After reboot, supreisingly my fan is not running and power usage is around **10W**.
+After reboot, surprisingly my fan is not running and power usage is around **10W**.
 So I think it's working. But **10W** is still a lot. I think I can do better.
 
 ## Optimize more with tlp
