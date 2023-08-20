@@ -2,7 +2,7 @@
 layout: post
 title: Install debian on Lenovo Ideapad 5 Pro 16ARH7
 date: 2023-08-13 12:45 +0630
-tags: linux
+tags: Linux
 image: /assets/images/posts/lenovo-debian.jpg
 ---
 

@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-{% assign tag = page.path | split: "/" | last | split: "." | first %} 
+{% assign tag = page.path | split: "/" | last | replace: ".md", "" %} 
 {% assign posts = site.tags[tag] %} 
 
 <h3 style="opacity: 0.8;">{{ tag | capitalize }} related posts</h3>

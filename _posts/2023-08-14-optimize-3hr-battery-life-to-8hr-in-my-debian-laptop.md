@@ -2,7 +2,7 @@
 layout: post
 title: Optimize 3hr battery life to 8hr in my debian laptop🔋
 date: 2023-08-14 16:32 +0630
-tags: linux
+tags: Linux
 image: /assets/images/posts/lenovo-debian.jpg
 ---
 
