@@ -2,7 +2,7 @@
 layout: post
 title: Strapi:extend refresh token method in users-permissions
 date: 2023-08-20 16:11 +0630
-tags: Strapi Node.js
+tags: Strapi Javascript
 image: https://assets.strapi.io/uploads/HP_meta_b32f546a40.png
 ---
 
