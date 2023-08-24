@@ -58,7 +58,10 @@ Just make sure your phone and laptop are connected to same network and type the
 IP address & Port shown in your option. See image below.
 
 
-![Wireless debugging option]({{ page.image }})
+<figure>
+    <img style="margin: 12px 0;" src="{{ page.image }}" alt="Wireless debugging option"/>
+    <figcaption>Eg. Screenshot of Wireless debugging option</figcaption>
+</figure>   
 
 Now run following command to connect your device wirelessly.
 

@@ -2,14 +2,14 @@
  * This file is downloaded and modified from simplecss.org project.
  * For more information, visit - https://simplecss.org/
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 /* Global variables. */
 :root,
 ::backdrop {
   /* Set sans-serif & mono fonts */
-  --sans-font: 'Roboto' ,-apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
-    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+  --sans-font: "Roboto", -apple-system, BlinkMacSystemFont, "Avenir Next",
+    Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
     "Helvetica Neue", sans-serif;
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --standard-border-radius: 5px;
@@ -563,8 +563,9 @@ video {
 
 figure {
   margin: 0;
-  display: block;
   overflow-x: auto;
+  display: grid;
+  place-items: center;
 }
 
 figcaption {
