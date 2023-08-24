@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Delete EFI partition from windows
-date: 2023-08-22 14:26 +0630
+date: 2023-07-22 14:26 +0630
 tags: Windows
 ---
 
