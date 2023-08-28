@@ -2,7 +2,7 @@
 layout: post
 title: "*chmod* Cheat Sheet"
 date: 2023-08-24 18:28 +0630
-tags: Linux cheat-sheet
+tags: Unix cheat-sheet
 image: /assets/images/posts/chmod.jpg
 ---
 
