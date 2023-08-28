@@ -2,7 +2,7 @@
 layout: work
 title: Matrix:Play to Win
 date: 2023-08-01 
-tech: [React Native, Expo, Socket.io]
+tech: [React Native, React.js, Expo, Socket.io]
 description: Matrix is a play to earn application. Play games, try your luck with daily spins, compete with other players and earn cash.
 image: /assets/images/projects/matrix/cover.jpg
 webp-image: /assets/images/projects/matrix/cover.webp

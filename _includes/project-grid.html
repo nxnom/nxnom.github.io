@@ -8,7 +8,7 @@
         {% include image.html class="project-image" src=src webp=webp %}
         <div class="project-title-wrapper">
           <div class="project-title">{{ project.title | escape }}</div>
-          {% assign techs = project.tech | slice: 0, 3%} {% for t in techs %}
+          {% assign techs = project.tech | slice: 0, 4%} {% for t in techs %}
           <span class="chip">{{ t }}</span>
           {% endfor %}
           <div class="project-subtitle">{{ project.description }}</div>

@@ -2,7 +2,7 @@
 layout: work
 title: Alpha Premium
 date: 2023-07-30
-tech: [Flutter, Socket.io, Node.js]
+tech: [Flutter, React.js, Socket.io, Node.js]
 description: Alpha Premium Mobile is a subscription-based movie streaming app which allow users to stream or download movie or shows.
 image: /assets/images/projects/alpha-premium/cover.jpg
 webp-image: /assets/images/projects/alpha-premium/cover.webp
