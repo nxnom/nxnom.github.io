@@ -7,7 +7,7 @@ layout: default
 <div class="row">
   {% for tag in page.tags %}
     {% assign path = "/articles/tags/" | append: tag | relative_url %}
-    <a class="chip" href="{{path }}">{{ tag | capitalize }}</a>
+    <a class="chip" href="{{path }}">{{ tag }}</a>
   {% endfor %}
 </div>
 <hr />
