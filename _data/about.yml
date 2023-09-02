@@ -1,0 +1,132 @@
+intro: Hi, I'm <strong>Wai Yan Phyo</strong>, an enthusiastic, confident
+  and reliable software developer who is looking forward to exploring new skills
+  and knowledge.
+
+skills:
+  key_skills:
+    - label: Languages
+      items: Dart, JavaScript, TypeScript, Ruby, C, Lua, Python
+    
+    - label: Frontend Web
+      items: React.js, Next.js, Redux, HTML, CSS, WordPress, MaterialUI, TailwindCSS
+
+    - label: Backend
+      items: Express.js, Socket.io, GraphQL, Feathers.js, Strapi, Ruby on Rails
+
+    - label: Mobile
+      items: Flutter, React Native, Expo, Capacitor
+
+    - label: Databases
+      items: MongoDB, PostgreSQL, Firebase
+
+    - label: Testing
+      items: Jest, React Testing Library, Cypress, RSpec
+
+  technical_skills:
+    - label: Version Control
+      items: Git, GitHub, GitLab
+
+    - label: Cloud Platforms
+      items: DigitalOcean, Google Cloud Platform, Heroku, Netlify, Vercel, Render
+
+    - label: Operating Systems
+      items: Linux, MacOS, Windows
+
+    - label: Text Editors/IDEs
+      items: Neovim, VSCode, Android Studio, IntelliJ IDEA, RubyMine
+
+    - label: Tools
+      items: Docker, Nginx, Zsh, tmux, Vim, Figma, Postman
+
+#
+#
+# Experience
+#
+#
+experience:
+  - title: Freelance - Software Developer
+    desc: Develop full-stack web applications and websites for clients.
+      Work with clients to determine project needs and requirements.
+      Visit <a href="/works">works</a> page to see some of my projects.
+    date: 2019 - Present
+
+  - title: Nay Gabar Co., Ltd - Flutter Developer(Contract)
+    desc: Develop and maintain mobile application using Flutter. Lead small team of developers. Create core components of our mobile applications.
+    date: 2021 Sep - 2021 Nov
+
+  - title: Strong Source Holding - IT Specialist
+    desc: Responsible for developing and maintaining Networking and Security System. Install and configure computer hardware, software, systems, networks, printers and scanners.
+    date: 2018 - 2019
+
+#
+#
+# Education
+#
+#
+education:
+  - title: Microverse
+    desc: Full Stack Web Development
+    date: 2022 - 2023
+
+  - title: Taunggyi University
+    desc: Bachelor of Arts - BA, English
+    date: 2014 - 2018
+
+  - title: University of Technology(Yatanarpon Cyber City)
+    desc: Computer Science
+    date: 2011 - 2013
+
+#
+#
+# Certifications
+#
+#
+certifications:
+  - title: Solana Blockchain Developer Program
+    desc: Learn how to build decentralized applications on Solana.
+    date: May 02, 2023
+    link: https://drive.google.com/file/d/1LliXNHTsMoUioRgn-8aPTl4lxplUsvCn/view?usp=sharing
+
+  - title: Advanced Relational Databases and SQL
+    desc: Learn how to build and scale applications using MySQL,with advanced SQL queries.
+    date: Jan 10, 2021
+    link: https://www.coursera.org/account/accomplishments/certificate/5G5LPV4SDE78
+
+  - title: Python for Everybody
+    desc: Learn to Program and Analyze Data with Python. Develop programs to gather, clean, analyze, and visualize data.
+    date: Dec 24, 2020
+    link: https://www.coursera.org/account/accomplishments/specialization/D6BML3XT9NLK
+
+#
+#
+# Languages
+#
+#
+languages:
+  - label: English
+    level: Professional working proficiency
+
+  - label: Myanmar (Burmese)
+    level: Native
+
+#
+#
+# Contact
+#
+#
+contact:
+  - label: Email
+    link: mailto:oyhpnayiaw@gmail.com
+    link_label: oyhpnayiaw@gmail.com
+
+  - label: GitHub
+    link: https://github.com/oyhpnayiaw
+    link_label: "oyhpnayiaw"
+
+  - label: LinkedIn
+    link: https://www.linkedin.com/in/oyhpnayiaw/
+    link_label: "oyhpnayiaw"
+
+  - label: Twitter
+    link: https://twitter.com/oyhpnayiaw
+    link_label: "@oyhpnayiaw"

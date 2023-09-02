@@ -5,130 +5,168 @@ title: About Me
 ---
 
 <style>
-  .tools span {
-    display: inline-block;
-    min-width: 6rem;
-    font-size: 0.95rem;
-    font-weight: bold;
+  h5 {
+    margin-bottom: 0;
+    text-transform: uppercase;
   }
 
-  .contact-list span {
+  .label {
     display: inline-block;
-    min-width: 4.5rem;
-    font-size: 0.95rem;
+    min-width: 6.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .margin-bottom {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .desc {
+    opacity: 0.8;
+    display: block;
+  }
+
+  time {
+    margin-top: 1px;
+    padding-bottom: 4px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+
+  .technical {
+    min-width: 9rem;
   }
 </style>
 
-<h2>About Me</h2>
+<h2>About / Resume</h2>
 
 <p>
-  Thanks for visiting my blog! My name is <i><b>{{ site.author.name }}</b></i> but people
-  call me <i><b>EB</b></i
-  >. I'm simple guy who loves to code while listening to ballad songs and watch
-  movies in my free time.
+  {{ site.data.about.intro }}
 </p>
 
-<details open>
+<details>
   <summary>
-    <span style="margin-left: 0.4rem"> Backstory </span>
+    <span style="margin-left: 0.4rem"> My Coding Journey in a Nutshell </span>
   </summary>
-
   <p>
-    I was first introduced to programming at 2011 when I started my first year
-    at university. I was actively coding for 3 years and then I stopped for 5
-    years and only using tools like workpress. I started coding again in 2019
-    and I've been coding ever since. At that time, I just wanted to convert my
-    wordpress website to android app and I can't find opensource project suited
-    to my project. So I don't have any choice but to code again. Flutter is
-    kinda hot at that moment, so I started learning flutter and I've been using
-    flutter ever since.
+    I started exploring programming back in 2011 during my first year at university. I was into coding for three years
+    but then took a break for five years, mainly using tools like WordPress. In 2019, I decided to code again because I
+    wanted to turn my WordPress website into an Android app.
   </p>
 
   <p style="margin-bottom: 1rem">
-    I post about my project on facebook and ppl started asking me to make app
-    for them. So, I started working for them and become a freelancer. But you
-    know I cannot do everying with flutter. So I started learning javascript and
-    React.js for web development and Node.js for backend development.
+    I couldn't find the right open-source project, so I had no choice but to get back into coding. Flutter was popular
+    at that time, so I began learning it, and I've been using it ever since.
+  </p>
+
+  <p style="margin-bottom: 1rem">
+    When I shared my projects on social media, people started asking me to create apps for them. That's when I started
+    freelancing. I realized that I needed to learn JavaScript, React.js for web development, and Node.js for backend
+    development to expand my skill set.
+  </p>
+
+  <p style="margin-bottom: 1rem">
+    I'm passionate about learning and staying updated with industry trends. Through my projects, I've developed
+    problem-solving, communication, and teamwork skills. I'm excited about the future and eager to work on exciting
+    projects.
   </p>
 </details>
 
-<p>
-  I'm currently looking for a full-time remote job. If you want to know more
-  about me, please view my
-  <a href="{{ site.author.resume }}" target="_blank">resume</a> or my
-  <a href="https://www.linkedin.com/in/{{ site.author.handle }}" target="_blank"
-    >linkedin</a
-  >
-  profile. If you are interested in working with me, please
-  <a href="#contact">contact me</a>.
-</p>
+{% include social-links.html %}
 
-<h3>Tools I mainly use</h3>
+<section style="margin-top: 12px;">
+  <h5>KEY SKILLS</h5>
 
-<ul class="tools">
-  <li><span>Languages</span>: Dart, Javascript, Typescript</li>
-  <li><span>Frameworks</span>: Flutter, Express.js, React.js, React Native</li>
-  <li><span>Database</span>: MongoDB, PostgreSQL, Firebase</li>
-</ul>
+  <ul>
+    {% for skill in site.data.about.skills.key_skills %}
+    <li>
+      <span class="label">{{ skill.label }}</span>
+      <span class="desc margin-bottom">{{ skill.items }}</span>
+    </li>
+    {% endfor %}
+  </ul>
 
-You can view how I use these tools in my past
-<a href="/works">projects</a>. You can click on each project to view more
-in-depth details about the project.
+  <h5>TECHNICAL SKILLS</h5>
 
-<h5>Tools I'm familiar with</h5>
+  <ul>
+    {% for skill in site.data.about.skills.technical_skills %}
+    <li>
+      <span class="label technical">{{ skill.label }}</span>
+      <span class="desc margin-bottom">{{ skill.items }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
 
-<ul class="tools">
-  <li><span>Languages</span>: Ruby, Lua, C</li>
-  <li><span>Frameworks</span>: Ruby on Rails, Next.js, Vue.js</li>
-  <li><span>Database</span>: MySQL, SQLite</li>
-</ul>
+<section>
+  <h5>WORK EXPERIENCE</h5>
 
-<p>
-  I don't have any favorite tools. I just use the tools that are suitable for
-  the project. I'm always open to learn new tools and technologies. I also try
-  to learn new tools and technologies whenever I have free time.
-</p>
-<p>
-  <i>
-   <b>PS:</b> I know that Express.js, React.js blah blah are not technically frameworks.
-    Hey! It is what it is ¯\_(ツ)_/¯
-  </i>
-</p>
+  <ul>
+    {% for exp in site.data.about.experience %}
+    <li>
+      <span class="label">{{ exp.title }}</span>
+      <span class="desc">{{ exp.desc }}</span>
+      <time class="margin-bottom">{{ exp.date }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
 
-<h3 id="contact">Contact Me</h3>
+<section>
+  <h5>EDUCATION</h5>
+  <ul>
+    {% for edu in site.data.about.education %}
+    <li>
+      <span class="label">{{ edu.title }}</span>
+      <span class="desc">{{ edu.desc }}</span>
+      <time class="margin-bottom">{{ edu.date }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
 
-Please feel free to contact me if you have any questions or if you want to work
-with me.
+<section>
+  <h5>Certifications</h5>
 
-<ul class="contact-list">
-  <li>
-    <span>Email</span>:
-    <a
-      href="mailto:{{ site.author.email }}"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {{ site.author.email }}
-    </a>
-  </li>
-  <li>
-    <span>Linkedin</span>:
-    <a
-      href="https://www.linkedin.com/in/{{ site.author.handle }}"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {{ site.author.handle }}
-    </a>
-  </li>
-  <li>
-    <span>Github</span>:
-    <a
-      href="https://github.com/{{ site.author.handle }}"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {{ site.author.handle }}
-    </a>
-  </li>
-</ul>
+  <ul>
+    {% for cert in site.data.about.certifications %}
+    <li>
+      <a class="label" href="{{ cert.link }}" target="_blank">{{ cert.title }} &#8599;</a>
+      <span class="desc">{{ cert.desc }}</span>
+      <time class="margin-bottom">{{ cert.date }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h5>Languages</h5>
+
+  <ul>
+    {% for lang in site.data.about.languages %}
+    <li>
+      <span class="label">{{ lang.label }}</span>
+      <span class="desc margin-bottom">{{ lang.level }}</span>
+    </li>
+    {% endfor %}
+</section>
+
+<section>
+  <h5>CONTACT</h5>
+
+  <ul class="contact-list">
+    {% for contact in site.data.about.contact %}
+    <li>
+      <span class="label">{{ contact.label }}</span>
+      <a href="{{ contact.link }}" target="_blank" rel="noopener noreferrer">
+        {{ contact.link_label }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <blockquote>
+    Feel free to contact me if you have any questions or suggestions.
+  </blockquote>
+</section>
