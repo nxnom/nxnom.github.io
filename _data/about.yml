@@ -50,11 +50,15 @@ experience:
       Visit <a href="/works">works</a> page to see some of my projects.
     date: 2019 - Present
 
+  - title: <a href="https://dss.com.mm" target="_blank" rel="noopener noreferrer">DSS Corp</a> - Full Stack Developer
+    desc: Develop and maintain full-stack web applications using React.js, React Native, Node.js and other technologies.
+    date: 2023 Oct - Present
+
   - title: Nay Gabar Co., Ltd - Flutter Developer(Contract)
     desc: Develop and maintain mobile application using Flutter. Lead small team of developers. Create core components of our mobile applications.
     date: 2021 Sep - 2021 Nov
 
-  - title: Strong Source Holding - IT Specialist
+  - title: <a href="https://www.linkedin.com/company/strong-source-holding-co-ltd/?originalSubdomain=mm" target="_blank">Strong Source Holding</a> - IT Specialist
     desc: Responsible for developing and maintaining Networking and Security System. Install and configure computer hardware, software, systems, networks, printers and scanners.
     date: 2018 - 2019
 
