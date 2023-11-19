@@ -2,7 +2,7 @@
 layout: post
 title: Managing app version in react native like a chad in react native
 date: 2023-11-19 16:11 +0630
-tags: ["React Native"]
+tags: React-Native
 image: /assets/images/posts/manage-app-version-in-react-native.jpeg
 ---
 
