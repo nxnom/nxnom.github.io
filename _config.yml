@@ -4,16 +4,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "@oyhpnayiaw"
+title: "@nxnom"
 description: >-
-  oyhpnayiaw's blog
+  nxnom's blog
 baseurl: ""
-url: https://oyhpnayiaw.github.io
+url: https://nxnom.github.io
 author:
   name: Wai Yan Phyo
-  email: oyhpnayiaw@gmail.com
-  handle: oyhpnayiaw
-  url: https://oyhpnayiaw.github.io
+  email: education.eb@gmail.com
+  handle: nxnom
+  url: https://nxnom.github.io
   resume: https://docs.google.com/document/d/1EIFSyTvPf_ggfOfHiaphnn9Le33FDqktm47VlhHz9WE/edit?usp=sharing
 
 permalink: /articles/:title
