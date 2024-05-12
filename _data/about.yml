@@ -68,10 +68,6 @@ experience:
 #
 #
 education:
-  - title: Microverse
-    desc: Full Stack Web Development
-    date: 2022 - 2023
-
   - title: Taunggyi University
     desc: Bachelor of Arts - BA, English
     date: 2014 - 2018
@@ -124,13 +120,13 @@ contact:
     link_label: oyhpnayiaw@gmail.com
 
   - label: GitHub
-    link: https://github.com/oyhpnayiaw
-    link_label: "oyhpnayiaw"
+    link: https://github.com/nxnom
+    link_label: "nxnom"
 
   - label: LinkedIn
-    link: https://www.linkedin.com/in/oyhpnayiaw/
-    link_label: "oyhpnayiaw"
+    link: https://www.linkedin.com/in/wai-yan-phyo
+    link_label: "Wai Yan Phyo"
 
   - label: Twitter
-    link: https://twitter.com/oyhpnayiaw
-    link_label: "@oyhpnayiaw"
+    link: https://twitter.com/i3xnom
+    link_label: "@i3xnom"
