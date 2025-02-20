@@ -2,7 +2,7 @@
 
 Built using [Jekyll](https://jekyllrb.com/).
 
-View the live site at [https://oyhpnayiaw.github.io/](https://oyhpnayiaw.github.io/).
+View the live site at [https://nxnom.github.io/](https://nxnom.github.io/).
 
 ### Requirements
 
