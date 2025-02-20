@@ -1,8 +1,8 @@
 ---
 layout: work
 title: ERDB
-date: 2023-08-31
-tech: [Ruby]
+date: 2023-08-03
+tech: [Ruby, Open Source]
 description: Ruby Gem for generation Entity-Relationship Diagrams (ERD), support sqlite, mysql and postgresql database.
 image: /assets/images/projects/erdb/cover.png
 live: https://github.com/nxnom/erdb

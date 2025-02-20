@@ -1,7 +1,7 @@
 ---
 layout: work
 title: mStream
-date: 2023-08-03
+date: 2023-08-10
 tech: [Flutter, React.js, Node.js, PostgresDB]
 description: mStream is a movie streaming app which allow users to stream or download movie or shows.
 image: /assets/images/projects/mstream/cover.jpg

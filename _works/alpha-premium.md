@@ -7,8 +7,6 @@ description: Alpha Premium Mobile is a subscription-based movie streaming app wh
 image: /assets/images/projects/alpha-premium/cover.jpg
 webp-image: /assets/images/projects/alpha-premium/cover.webp
 screenshots-folder: alpha-premium
-live: https://play.google.com/store/apps/details?id=com.alphapremium.app
-live-name: Play Store
 ---
 
 - [Introduction](#introduction)

@@ -6,8 +6,6 @@ tech: [Flutter, Android, Leanback]
 description: Android TV version of Alpha Premium, Movie and TV series streaming platform.
 image: /assets/images/projects/alpha-premium-tv/cover.jpg
 webp-image: /assets/images/projects/alpha-premium-tv/cover.webp
-live: https://play.google.com/store/apps/details?id=com.alphapremium.tv
-live-name: Play Store
 screenshots-folder: alpha-premium-tv
 is-landscape-screenshots: true
 ---

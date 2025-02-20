@@ -6,7 +6,6 @@ tech: [React.js, PWA, Feathers.js]
 description: Myan Game Shop is a Progressive Web App for an e-commerce store that sells in-game items and gift cards. 
 image: /assets/images/projects/myan-game/cover.jpg
 webp-image: /assets/images/projects/myan-game/cover.webp
-live: https://myangameshop.com/
 screenshots-folder: myan-game
 is-landscape-screenshots: true
 ---
