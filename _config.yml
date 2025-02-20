@@ -13,6 +13,8 @@ author:
   name: Wai Yan Phyo
   email: education.eb@gmail.com
   handle: nxnom
+  twitter_handle: i3xnom
+  linkedin_handle: wai-yan-phyo
   url: https://nxnom.github.io
   resume: https://docs.google.com/document/d/1EIFSyTvPf_ggfOfHiaphnn9Le33FDqktm47VlhHz9WE/edit?usp=sharing
 
@@ -40,19 +42,16 @@ sass:
   style: compressed
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       image: /assets/default.png
-  -
-    scope:
+  - scope:
       path: "_works"
     values:
-      screenshots: ['1', '2', '3', '4']
-  - 
-    scope:
-      path: "articles/tags" 
+      screenshots: ["1", "2", "3", "4"]
+  - scope:
+      path: "articles/tags"
     values:
       layout: "tag"
 

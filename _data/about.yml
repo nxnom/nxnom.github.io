@@ -5,29 +5,29 @@ intro: Hi, I'm <strong>Wai Yan Phyo</strong>, an enthusiastic, confident
 skills:
   key_skills:
     - label: Languages
-      items: Dart, JavaScript, TypeScript, Ruby, C, Lua, Python
-    
+      items: JavaScript, TypeScript, Dart, Ruby, C, Lua, Python
+
     - label: Frontend Web
       items: React.js, Next.js, Redux, HTML, CSS, WordPress, MaterialUI, TailwindCSS
 
     - label: Backend
-      items: Express.js, Socket.io, GraphQL, Feathers.js, Strapi, Ruby on Rails
+      items: Express.js, Socket.io, GraphQL, Nest.js, Feathers.js, Fastify, FastAPI, Strapi, Ruby on Rails
 
     - label: Mobile
-      items: Flutter, React Native, Expo, Capacitor
+      items: React Native, Expo, Flutter, Ionic
 
     - label: Databases
-      items: MongoDB, PostgreSQL, Firebase
+      items: MongoDB, PostgreSQL, MySQL, Redis, Pinecone
 
     - label: Testing
       items: Jest, React Testing Library, Cypress, RSpec
 
   technical_skills:
     - label: Version Control
-      items: Git, GitHub, GitLab
+      items: Git, GitHub, GitLab, Bitbucket
 
     - label: Cloud Platforms
-      items: DigitalOcean, Google Cloud Platform, Heroku, Netlify, Vercel, Render
+      items: DigitalOcean, Vercel, Google Cloud Platform, Heroku, Netlify, Vercel, Render
 
     - label: Operating Systems
       items: Linux, MacOS, Windows
@@ -50,9 +50,9 @@ experience:
       Visit <a href="/works">works</a> page to see some of my projects.
     date: 2019 - Present
 
-  - title: <a href="https://dss.com.mm" target="_blank" rel="noopener noreferrer">DSS Corp</a> - Full Stack Developer
+  - title: <a href="https://genfitx.com" target="_blank" rel="noopener noreferrer">GenFitX</a> - Senior Full Stack Developer
     desc: Develop and maintain full-stack web applications using React.js, React Native, Node.js and other technologies.
-    date: 2023 Oct - Present
+    date: 2023 Aug – 2024 Dec
 
   - title: Nay Gabar Co., Ltd - Flutter Developer(Contract)
     desc: Develop and maintain mobile application using Flutter. Lead small team of developers. Create core components of our mobile applications.
